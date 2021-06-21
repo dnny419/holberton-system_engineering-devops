@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2059
 # This Bash script displays lines containing the bash word.
+# shellcheck disable=SC2059
 
 ps axuf | grep bash
