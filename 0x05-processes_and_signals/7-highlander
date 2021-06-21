@@ -1,0 +1,10 @@
+#!/bin/bash
+# This Bash script displays to infinity and beyond indefinitely
+# and will also display I am invincible whenever someone attempts to stop the process!
+
+for (( ; ; ))
+do
+	echo "To infinity and beyond"
+	trap "echo I am invincible!!!" SIGTERM
+	sleep 2
+done
