@@ -2,4 +2,4 @@
 # kills 7-highlander process
 
 PID=$(pgrep -f 7-highlander)
-sudo kill "$PID"
+sudo pkill -f "$PID"
