@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+# Resolves and changes the locahost IP address to 127.0.0.2
+# Resolves and changes the Facebook IP address to 8.8.8.8
 cp /etc/hosts ~/hosts.new
 sed -i "/.* facebook.com$/d" ~/hosts.new
 sed -i "1 s/^/8.8.8.6 facebook.com\n/" ~/hosts.new
